@@ -8,10 +8,19 @@
     background-color: var(--color-dark);
     border: var(--border);
     border-radius: var(--border-radius);
+    transition: 0.2s;
 
-    @include hover {
+    &:hover {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+        box-shadow: var(--box-shadow);
+        cursor: pointer;
+    }
+
+    &:active {
         color: var(--color-dark);
         background-color: var(--color-accent);
+        transform: translateY(3px);
     }
 
     &--transparent {
@@ -23,7 +32,7 @@
         color: var(--color-dark);
         background-color: var(--color-accent);
 
-        @include hover {
+        &:hover {
             color: var(--color-accent);
             background-color: var(--color-dark);
         }
