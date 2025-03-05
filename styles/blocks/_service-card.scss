@@ -64,9 +64,10 @@
         align-items: center;
         column-gap: 15px;
         font-size: 20px;
+        transition: 1s;
 
         &:hover {
-            opacity: 0.7;
+            transform: scale(1.2);
         }
 
         @include mobile {
@@ -85,9 +86,13 @@
 
             background-color: currentColor;
             border-radius: 50%;
+            transition: 1s;
 
             svg {
                 color: var(--serviceCardLinkIconColor);
+            }
+            &:hover {
+                rotate: 180deg;
             }
         }
 
