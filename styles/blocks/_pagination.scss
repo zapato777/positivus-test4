@@ -1,0 +1,80 @@
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10vw;
+}
+
+.slider__btn-prev {
+    background-color: transparent;
+    color: var(--color-accent);
+    padding: 5px 10px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    transition: .2s;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 15px var(--color-accent);
+    }
+
+    &:active {
+        border: 2px solid var(--color-accent);
+        transform: scale(0.8);
+    }
+}
+
+
+
+.slider__btn-next {
+    background-color: transparent;
+    color: var(--color-accent);
+    padding: 5px 10px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    transition: .2s;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 15px var(--color-accent);
+    }
+    
+    &:active {
+        border: 2px solid var(--color-accent);
+        transform: scale(0.8);
+    }
+}
+
+
+.pagination-wrapper {
+    display: flex;
+    column-gap: 15px;
+}
+
+.pagination-item {
+    @include reset-button;
+    @include flex-center;
+    @include square(24px);
+
+    .pagination__button {
+        background-color: transparent;
+        color: var(--color-light);
+        border: none;
+    }
+    // width: 16px;
+    // height: 16px;
+    // border: 1px solid #b9ff66;
+    .pagination__button:hover {
+        color: var(--color-accent);
+        transform: scale(1.5);
+    }
+
+    .pagination__button:active {
+        transform: scale(0.5);
+    }
+
+    .active-dot {
+        color: var(--color-accent);
+        transform: scale(1.5);
+    }
+}

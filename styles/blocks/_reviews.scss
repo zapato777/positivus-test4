@@ -1,0 +1,38 @@
+
+.review__slider {
+    --reviewsSliderSlideWidth: 1240px;
+    max-width: 1240px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vw;
+    padding-top: 6vw;
+    padding-bottom: 5vw;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    
+    &-line {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-color: var(--color-dark);
+        transition: all 1s;
+    }
+
+    &-item {
+        max-width: var(--reviewsSliderSlideWidth);
+        margin: 0 15vw;
+
+        @include tablet {
+            margin: 0 7vw;
+        }
+
+        @include mobile {
+            margin: 0 7vw;
+        }
+    }
+}
+
+
