@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 10vw;
+    column-gap: 8vw;
 }
 
 .slider__btn-prev {
@@ -48,8 +48,9 @@
 
 .pagination-wrapper {
     display: flex;
-    column-gap: 15px;
+    column-gap: 3vw;
 }
+
 
 .pagination-item {
     @include reset-button;

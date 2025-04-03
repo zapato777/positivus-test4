@@ -1185,8 +1185,8 @@ h4,
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 10vw;
-       column-gap: 10vw;
+  -moz-column-gap: 8vw;
+       column-gap: 8vw;
 }
 
 .slider__btn-prev {
@@ -1225,8 +1225,8 @@ h4,
 
 .pagination-wrapper {
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
 }
 
 .pagination-item {
@@ -1288,7 +1288,7 @@ h4,
 }
 @media (max-width: 767px) {
   .review__slider-item {
-    margin: 0 7vw;
+    margin: 0 3vw;
   }
 }
 
@@ -1309,7 +1309,7 @@ h4,
 @media (max-width: 767px) {
   .review-card__body {
     height: 300px;
-    padding: 10% 7% 10% 10%;
+    padding: 10% 5% 10% 5%;
   }
 }
 .review-card__body::after {

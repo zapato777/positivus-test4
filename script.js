@@ -36,7 +36,7 @@ showSlide();
 function prevSlide() {
     sliderCount--;
     if (sliderCount < 0) sliderCount = sliderImages.length -1;
-
+        // sliderLine.style.transition = "none";
         rollSlider();
         thisSlide(sliderCount);
 }
@@ -45,7 +45,7 @@ function prevSlide() {
 function nextSlide() {
     sliderCount++;
     if (sliderCount >= sliderImages.length) sliderCount = 0;
-
+        // sliderLine.style.transition = "none";
         rollSlider();
         thisSlide(sliderCount);
 }
